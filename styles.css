@@ -52,7 +52,6 @@ body {
     margin: 0;
 }
 
-.contenedor-confesion {}
 
 .contenedor-pregunta {
     border-radius: 20px;
@@ -128,5 +127,10 @@ body {
 }
 
 .contenedor-duda img {
-    width: 100px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+#gif-si{
+    border-radius: 30px;
 }
