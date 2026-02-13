@@ -108,7 +108,7 @@ body {
     border: 1px solid white;
     background-color: rgba(255, 255, 255, 0.3);
     position: absolute;
-    left: 254px;
+    left: 50%;
     transition: left 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), top 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -131,6 +131,94 @@ body {
     border-radius: 10px;
 }
 
-#gif-si{
+#gif-si {
     border-radius: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        height: 100%;
+        cursor: default;
+        background: none;
+        background: linear-gradient(170deg, var(--fondo-color-min), var(--fondo-color-mid), var(--fondo-color-max));
+    }
+
+    .main {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-principal {
+        min-height: fit-content;
+        width: 80%;
+        height: 90%;
+        border-radius: 50px;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.18);
+        text-align: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        gap: 5px;
+    }
+
+    .contenedor-titulo {
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+
+    .contenedor-titulo h1 {
+        margin: 0;
+    }
+
+
+    .contenedor-pregunta {
+        border-radius: 20px;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .contenedor-secundario {
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-respuesta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        min-height: 170px;
+        border-radius: 20px;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.2);
+        position: relative;
+        overflow: hidden;
+    }
+
+    #contenedor-si,
+    #contenedor-no,
+    #contenedor-x {
+        cursor: pointer;
+        border: none;
+        width: 75px;
+        height: 55px;
+        border-radius: 30px;
+        font-size: medium;
+    }
+
+    #contenedor-no{
+        left: calc(50%+37px)
+    }
 }

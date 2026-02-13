@@ -35,7 +35,7 @@ respuestaNo.addEventListener("click", () => {
 });
 
 respuestaSi.addEventListener("click", () => {
-  contenedorSec.innerHTML = `                <h2>Síí 💗</h2>
+  contenedorSec.innerHTML = `                <h2>¡Tenemos una cita! 💗</h2>
                 <p>El mejor San Valentín</p>
                 <video autoplay loop muted playsinline id="gif-si">
                     <source src="img/congrat.mp4" type="video/mp4">
